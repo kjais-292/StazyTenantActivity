@@ -1,0 +1,55 @@
+[debug] [2024-06-12T09:53:50.559Z] ----------------------------------------------------------------------
+[debug] [2024-06-12T09:53:50.566Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-06-12T09:53:50.566Z] CLI Version:   13.11.2
+[debug] [2024-06-12T09:53:50.567Z] Platform:      win32
+[debug] [2024-06-12T09:53:50.567Z] Node Version:  v20.11.1
+[debug] [2024-06-12T09:53:50.567Z] Time:          Wed Jun 12 2024 15:23:50 GMT+0530 (India Standard Time)
+[debug] [2024-06-12T09:53:50.567Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-12T09:53:50.729Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-12T09:53:50.730Z] > authorizing via signed-in user (enitialsdb@gmail.com)
+[debug] [2024-06-12T09:53:50.730Z] [iam] checking project stazy-46518 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-06-12T09:53:50.734Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/stazy-46518:testIamPermissions [none]
+[debug] [2024-06-12T09:53:50.734Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/stazy-46518:testIamPermissions x-goog-quota-user=projects/stazy-46518
+[debug] [2024-06-12T09:53:50.734Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/stazy-46518:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-12T09:53:52.529Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/stazy-46518:testIamPermissions 200
+[debug] [2024-06-12T09:53:52.530Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/stazy-46518:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-12T09:53:52.534Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/stazy-46518 [none]
+[debug] [2024-06-12T09:53:52.984Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/stazy-46518 200
+[debug] [2024-06-12T09:53:52.984Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/stazy-46518 {"projectId":"stazy-46518","projectNumber":"728959127885","displayName":"Stazy","name":"projects/stazy-46518","resources":{"hostingSite":"stazy-46518","realtimeDatabaseInstance":"stazy-46518-default-rtdb","storageBucket":"stazy-46518.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_1dd37f0d-4037-4978-a5f9-dbd2b219f57e"}
+[debug] [2024-06-12T09:54:01.954Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/stazy-46518/sites pageToken=&pageSize=10
+[debug] [2024-06-12T09:54:03.257Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/stazy-46518/sites 200
+[debug] [2024-06-12T09:54:03.257Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/stazy-46518/sites {"sites":[{"name":"projects/stazy-46518/sites/stazy-46518","defaultUrl":"https://stazy-46518.web.app","appId":"1:728959127885:web:3011cc26b32c4bc08ae704","type":"DEFAULT_SITE"}]}
+[debug] [2024-06-12T09:54:03.258Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:728959127885:web:3011cc26b32c4bc08ae704/config [none]
+[debug] [2024-06-12T09:54:04.133Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:728959127885:web:3011cc26b32c4bc08ae704/config 200
+[debug] [2024-06-12T09:54:04.133Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:728959127885:web:3011cc26b32c4bc08ae704/config {"projectId":"stazy-46518","appId":"1:728959127885:web:3011cc26b32c4bc08ae704","databaseURL":"https://stazy-46518-default-rtdb.firebaseio.com","storageBucket":"stazy-46518.appspot.com","locationId":"us-central","apiKey":"AIzaSyB1dw8dtJ1LlSzj8WcS7XGqgc2HglZIeAw","authDomain":"stazy-46518.firebaseapp.com","messagingSenderId":"728959127885","measurementId":"G-Z5BKCJ5RF9"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-06-12T09:54:21.878Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/stazy-46518/sites/stazy-46518 [none]
+[debug] [2024-06-12T09:54:22.926Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/stazy-46518/sites/stazy-46518 200
+[debug] [2024-06-12T09:54:22.927Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/stazy-46518/sites/stazy-46518 {"name":"projects/stazy-46518/sites/stazy-46518","defaultUrl":"https://stazy-46518.web.app","appId":"1:728959127885:web:3011cc26b32c4bc08ae704","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.3
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info] uncaughtException [Error: EPERM: operation not permitted, open 'C:\Users\HP\Desktop\stazy\duepayment\.next\trace'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'C:\\Users\\HP\\Desktop\\stazy\\duepayment\\.next\\trace'
+}
+
+[debug] [2024-06-12T09:55:21.428Z] Error: ENOENT: no such file or directory, open 'C:\Users\HP\Desktop\stazy\duepayment\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
